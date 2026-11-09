@@ -1,0 +1,6 @@
+br\com\voicebot\application\VoiceBotFunctions.class
+br\com\voicebot\domain\port\VoiceAgentProviderPort.class
+br\com\voicebot\domain\CallDispatchedEvent.class
+br\com\voicebot\domain\OutboundCallCommand.class
+br\com\voicebot\infra\vapi\VapiVoiceAgentAdapter.class
+br\com\voicebot\VoiceBotApplication.class
