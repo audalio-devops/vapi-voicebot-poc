@@ -1,0 +1,90 @@
+# ==============================================================================
+# Ambiente e Variáveis Sensíveis (Credenciais / API Keys)
+# ==============================================================================
+.env
+.env.*
+!.env.example
+*.local
+
+# Scripts e arquivos de configurações locais do ambiente
+configurations.txt
+
+# ==============================================================================
+# Java & Maven Build Artifacts
+# ==============================================================================
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# Maven Release & Dependency Reductions
+dependency-reduced-pom.xml
+buildNumber.properties
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+.mvn/timing.properties
+
+# ==============================================================================
+# Logs & Arquivos de Crash / Diagnóstico da JVM
+# ==============================================================================
+*.log
+logs/
+hs_err_pid*
+replay_pid*
+.attach_pid*
+
+# ==============================================================================
+# IDEs & Editores de Código
+# ==============================================================================
+
+# Visual Studio Code
+.vscode/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+bin/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbproject/load-factor.properties
+
+# ==============================================================================
+# Arquivos Temporários de Sistema Operacional
+# ==============================================================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
