@@ -272,8 +272,8 @@ vapi-voicebot-poc/
 
 ### 4.1 Pré-requisitos
 
-1. **Java Development Kit (JDK)**: Versão 21 ou superior instalada (`java -version`).
-2. **Apache Maven**: Versão 3.8+ instalada (`mvn -version`).
+1. **Java Development Kit (JDK)**: JDK 25 disponível em `C:\Java\jdk-25.0.2` para executar o Maven neste projeto. O código continua configurado para compilação Java 21.
+2. **Apache Maven 3.6.3**: disponível em `D:\Tools\apache-maven-3.6.3`. O script `mvnw.cmd` e a configuração do VS Code usam essa instalação somente neste projeto, sem alterar o Maven global.
 3. **Conta no Vapi.ai**:
    - Chave de API privada (**API Key**).
    - Um número de telefone registrado e configurado no painel da Vapi (**Phone Number ID**).
@@ -306,13 +306,13 @@ Crie um arquivo `.env` na raiz do projeto ou configure as variáveis no seu sist
 Para compilar o código e validar dependências:
 
 ```powershell
-mvn clean compile
+.\mvnw.cmd clean compile
 ```
 
 Para gerar o arquivo `.jar` executável:
 
 ```powershell
-mvn clean package -DskipTests
+.\mvnw.cmd clean package -DskipTests
 ```
 
 O artefato gerado estará em `target/vapi-voicebot-poc-0.0.1-SNAPSHOT.jar`.
@@ -346,7 +346,7 @@ $env:VAPI_ELEVENLABS_VOICE_ID="seu_voice_id"
 $env:VAPI_ANTHROPIC_MODEL="claude-3-5-sonnet-20241022"
 $env:APP_WEBHOOK_URL="https://abcd-1234.ngrok-free.app/vapiWebhookReceiver"
 
-mvn spring-boot:run
+.\mvnw.cmd spring-boot:run
 ```
 
 #### Opção B: Executar via JAR (Java 21)

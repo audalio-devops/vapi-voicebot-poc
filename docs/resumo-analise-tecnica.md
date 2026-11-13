@@ -79,10 +79,11 @@ Em cada disparo de chamada, a aplicação instrui a Vapi.ai a orquestrar os melh
 ### 2.3 Stack Tecnológica
 
 - **Linguagem:** Java 21 (LTS)
+- **JDK local do projeto:** Java 25; compilação configurada para Java 21
 - **Framework Principal:** Spring Boot 3.3.4
 - **Arquitetura Serverless/Function:** Spring Cloud Function Web 2023.0.3
 - **Cliente HTTP:** Spring Framework RestClient
-- **Gerenciador de Dependências & Build:** Apache Maven 3.9+
+- **Gerenciador de Dependências & Build:** Apache Maven 3.6.3 (configurado localmente para o projeto)
 - **Provedor de Telefonia e Orquestração de Voz:** Vapi.ai API v1
 - **Modelos de IA:** Anthropic Claude 3.5 Sonnet, ElevenLabs Turbo v2.5, AssemblyAI
 
@@ -135,10 +136,10 @@ Em cada disparo de chamada, a aplicação instrui a Vapi.ai a orquestrar os melh
 3. **Compilação e Execução:**
    ```powershell
    # Compilação
-   mvn clean compile
+   .\mvnw.cmd clean compile
 
    # Execução
-   mvn spring-boot:run
+   .\mvnw.cmd spring-boot:run
    ```
 
 ---
